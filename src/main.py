@@ -17,6 +17,7 @@ jsonObject = jsonCreate(urlEnterprises)
 
 
 
+
 #search = driver.find_element(By.XPATH,'//*[@id="rankings"]/div/div[3]/div/div[8]/div/ol')
 
 
