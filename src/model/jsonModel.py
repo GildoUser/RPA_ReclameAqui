@@ -5,7 +5,5 @@ def jsonCreate(urlEnterprises):
         "date":f'{date.today()}',
         "urlEnterprises": urlEnterprises,
     }
-    print(jsonList)
-
     return jsonList
 
