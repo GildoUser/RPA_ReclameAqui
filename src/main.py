@@ -1,16 +1,16 @@
+
 from seleniumConfig.getConnection import startProcess_GettingData
 from model.jsonModel import jsonCreate
 from db.dbControl import updateCheck, updateInsert
 
-
+#check update to see if dateLastUpdate != today.   if true > update database 
 if updateCheck():
-    print('entrou')
+
     urlEnterprises = startProcess_GettingData()
     jsonObject = jsonCreate(urlEnterprises)
     updateInsert(jsonObject)
 
 
-#return a array with all links (20)
 
 #return {date: today, urlEnterprises: [ urls, ...]}
 
