@@ -18,13 +18,8 @@ def saveEnterprisesData(enterpriseData):
     urlEnterprises = startProcess_GettingData()
     jsonObject = jsonCreate(urlEnterprises)
     updateInsert(jsonObject)"""
-# def readEnterprisesData():
-#     try:
-#         with open(db_enterpriseLocal,'r', encoding='utf-8') as dataBase:
-#             data = json.load(dataBase)
-#             print(data)
-#         return data
-#     except: 
-#         print('...')
-
-
+def readEnterprisesData():
+        with open(db_enterpriseLocal,'r', encoding='utf-8') as dataBase:
+            data = json.load(dataBase)
+            print(data)
+        return data
