@@ -2,9 +2,14 @@ from seleniumConfig.getConnection import startProcess_GettingData
 from model.jsonModel import jsonCreate
 
 
-urlEnterprises = startProcess_GettingData() #return a array with all links (20)
 
-jsonObject = jsonCreate(urlEnterprises) #return {date: today, urlEnterprises: [ urls]}
+urlEnterprises = startProcess_GettingData()
+#return a array with all links (20)
+
+jsonObject = jsonCreate(urlEnterprises) 
+#return {date: today, urlEnterprises: [ urls, ...]}
+
+
 
 
 
